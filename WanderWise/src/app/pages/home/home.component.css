@@ -11,11 +11,17 @@ body {
     border-bottom: 2px solid #575757;
 }
 
-.mission {
+.itineraries {
     background-color: #a0c1eb;
     padding: 20px;
     text-align: center;
     border-bottom: 2px solid #575757;
+}
+
+.mission {
+    background-color: #b4cdf4;
+    padding: 20px;
+    text-align: center;
 }
 
 .mission ul {
@@ -23,51 +29,8 @@ body {
     margin-left: 20px;
 }
 
-.features {
-    background-color: #b4cdf4;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 2px solid #575757;
-}
-
-.features .plans {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.features .plan {
-    flex: 1;
-    margin: 0 10px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.features .plan h5 {
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.features ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.features ul li {
-    margin: 5px 0;
-    text-align: center;
-}
-
 .reviews {
-    background-color: #a0c1eb;
+    background-color: #b4cdf4;
     padding: 20px;
     text-align: center;
 }
