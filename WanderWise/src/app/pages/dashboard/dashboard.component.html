@@ -2,3 +2,14 @@
 <br>
 <p>dashboard works!</p>
 <!--Should have saved itineraries here and if paid user, should have the option to create/edit an itinerary-->
+
+<div class="weather-widget">
+    <h3>Weather Information</h3>
+    <div *ngIf="weatherData">
+        <p><strong>City:</strong></p>
+        <p><strong>Temperature:</strong></p>
+        <p><strong>Weather:</strong></p>
+    </div>      
+    <p *ngIf="!weatherData && !error">Loading weather data...</p>
+    <p *ngIf="error">{{ error }}</p>
+</div>
