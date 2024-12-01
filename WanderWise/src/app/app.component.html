@@ -1,9 +1,18 @@
 <nav>
   <ul>
-    <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
-    <li><a routerLink="/profile" routerLinkActive="active">Profile</a></li>
-    <li><a routerLink="/dashboard" routerLinkActive="active">Dashboard</a></li>
-    <li><a routerLink="/subscribe" routerLinkActive="active">Subscribe Today</a></li>
+    <li>
+      <button (click)="navigateTo('/home')">Home</button>
+    </li>
+    <li>
+      <button (click)="navigateTo('/dashboard')">Dashboard</button>
+    </li>
+    <li>
+      <button (click)="navigateTo('/profile')">Profile</button>
+    </li>
+    <li>
+      <button (click)="navigateTo('/subscribe')">Subscribe Today</button>
+    </li>
   </ul>
+  
 </nav>
 <router-outlet></router-outlet>

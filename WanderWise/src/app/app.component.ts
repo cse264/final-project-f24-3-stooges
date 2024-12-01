@@ -13,6 +13,10 @@ export class AppComponent implements OnInit {
 
   constructor(private router: Router) {}
 
+  navigateTo(route: string) {
+    this.router.navigate([route]);
+  }
+
   ngOnInit() {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
