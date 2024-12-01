@@ -66,3 +66,5 @@ typings/
 # Environments
 src/environments/environment.ts
 src/environments/environment.prod.ts
+
+WanderWise/env.json
