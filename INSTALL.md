@@ -1,3 +1,14 @@
+CREATE A env.json inside src with this inside:
+
+{
+    "user": "postgres",
+    "host": "localhost",
+    "database": "wanderwise",
+    "password": "PASSWORD_HERE",
+    "port": 5432
+}
+
+INSTALL TIPS:
 npm install
 npm install express
 npm install pg
