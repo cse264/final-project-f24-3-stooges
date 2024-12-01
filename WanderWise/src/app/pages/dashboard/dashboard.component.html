@@ -1,15 +1,29 @@
 <br>
 <br>
-<p>dashboard works!</p>
-<!--Should have saved itineraries here and if paid user, should have the option to create/edit an itinerary-->
-
-<div class="weather-widget">
-    <h3>Weather Information</h3>
-    <div *ngIf="weatherData">
-        <p><strong>City:</strong></p>
-        <p><strong>Temperature:</strong></p>
-        <p><strong>Weather:</strong></p>
-    </div>      
-    <p *ngIf="!weatherData && !error">Loading weather data...</p>
-    <p *ngIf="error">{{ error }}</p>
+<br>
+<div class="dashboard-container">
+    <div *ngIf="error" class="error-message">
+      {{ error }}
+    </div>
+  
+    <div *ngIf="weatherData && !error" class="weather-data">
+        <h2>Weather in {{ weatherData.name }}</h2>
+        <p><strong>Temperature:</strong> {{ weatherData.main.temp }} °C</p>
+        <p><strong>Weather:</strong> {{ weatherData.weather[0].description }}</p>
+        <p><strong>Humidity:</strong> {{ weatherData.main.humidity }}%</p>
+        <p><strong>Wind Speed:</strong> {{ weatherData.wind.speed }} m/s</p>
+    </div>
+  
+    <div class="city-input">
+        <input 
+            type="text" 
+            placeholder="Enter city name" 
+            #cityInput 
+            class="city-input-box"
+        />
+        <button (click)="fetchWeatherData(cityInput.value, envService.getOpenWeatherApiKey())">
+            Get Weather
+        </button>
+    </div>
 </div>
+  
