@@ -1,4 +1,4 @@
-CREATE A env.json inside src with this inside:
+CREATE A env.json inside WanderWise with this inside:
 
 {
     "user": "postgres",
@@ -8,7 +8,7 @@ CREATE A env.json inside src with this inside:
     "port": 5432
 }
 
-INSTALL TIPS:
+INSTALL TIPS for initial installs:
 npm install
 npm install express
 npm install express-session
