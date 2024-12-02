@@ -1,9 +1,30 @@
 <br>
 <br>
-<div class="login-container">
+<div class="parent">
+    <div class="login-box">
+        <div class = "login-container"> 
+            <h1 style = "color: #0ef; text-align: center; margin-bottom: 20px;"> WanderWise</h1>
+            <form action = "#">
+                <div class="input-box">
+                    <input type="email" [(ngModel)]="loginObj.emailId" name="emailId" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <input type="password" [(ngModel)]="loginObj.password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <button type="button" class="btn" (click)="onLogin()">Login</button>
+            </form>
+            <a
+            href="https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=329109774486-qahntnprkp0graq83u13oslquh1o97ff.apps.googleusercontent.com&redirect_uri=http://localhost:4200&scope=email"
+            class = "btn">
+            Login with Google
+        </a>
+            <div class="signup-link">
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+    </div>
     <!--This assumes we use google oauth-->
-    <h1>WanderWise</h1>
-    <h2>Login with Google</h2>
-    <a href="https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=329109774486-qahntnprkp0graq83u13oslquh1o97ff.apps.googleusercontent.com&redirect_uri=http://localhost:4200&scope=email">log in</a>
     <!--Note: may have to change this link, its the link we used for 216 lol-->
 </div>
