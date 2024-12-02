@@ -11,8 +11,12 @@ CREATE A env.json inside src with this inside:
 INSTALL TIPS:
 npm install
 npm install express
+npm install express-session
 npm install pg
 npm install postgres
 npm install -g @angular/cli
 
 npm run setup
+
+WHENEVER CHANGES ARE MADE IN src
+RUN "ng build --configuration production"
