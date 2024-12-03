@@ -1,49 +1,73 @@
 .features {
-    background-color: #b4cdf4;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.features .plans {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.features .plan {
-    flex: 1;
-    margin: 0 10px;
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.features .plan h5 {
     text-align: center;
-    font-size: 1.2em;
+}
+
+.features h2 {
     margin-bottom: 10px;
 }
 
-.features ul {
+.features p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #323232;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.plan {
+    flex: 1;
+    padding: 0 0 20px 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.plan.free {
+    background-color: #709cd6; 
+}
+
+.plan.paid { 
+    background-color: #5c88c1; 
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.plans h4 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.plan ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.features ul li {
-    margin: 5px 0;
-    text-align: center;
+.plan ul li {
+    margin: 10px 0;
+    font-size: 1rem;
 }
 
 button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #2676cb;
+    background-color: #24507f;
     color: white;
     border: none;
     border-radius: 5px;

@@ -1,11 +1,11 @@
 .dashboard-container {
-  font-family: Arial, sans-serif;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
 
 .itineraries-container {
+  padding: 15px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -13,7 +13,7 @@
 }
 
 .itinerary {
-  background-color: #f0f8ff;
+  background-color: #e0eaf8;
   border: 1px solid #ddd;
   padding: 15px;
   border-radius: 5px;
@@ -28,7 +28,7 @@
 
 .itinerary h4 {
   font-size: 1rem;
-  color: #3c6090;
+  color: #2c5182;
   margin-bottom: 10px;
 }
 
@@ -78,10 +78,10 @@
 }
 
 .weather-data {
-  background-color: #f0f8ff;
+  background-color: #e0eaf8;
   border: 1px solid #ddd;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 20px;
   font-size: 0.9rem;
 }
